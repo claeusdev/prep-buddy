@@ -1,0 +1,7 @@
+{
+  "name": "PreppBuddy",
+  "description": "A LeetCode-style interview preparation platform featuring a flashcard-based question interface and a document-style coding environment powered by Gemini AI for instant grading and complexity analysis.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+    "name": "@prepbuddy/gemini-service",
+    "version": "1.0.0",
+    "description": "Google Gemini AI service wrapper for PrepBuddy and other projects",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+    },
+    "keywords": [
+        "gemini",
+        "google-ai",
+        "ai-service",
+        "prepbuddy"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@google/genai": "^1.30.0"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.0",
+        "typescript": "~5.8.2"
+    },
+    "peerDependencies": {
+        "@google/genai": "^1.30.0"
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>PreppBuddy - AI Technical Interview Prep</title>
+    <meta name="title" content="PreppBuddy - AI Technical Interview Prep" />
+    <meta name="description" content="Master Algorithms, Data Structures, and System Design interviews with PreppBuddy. An AI-powered platform offering Blind 75 practice, complexity analysis, and mock interviews." />
+    <meta name="keywords" content="coding interview, system design, leetcode, algorithms, data structures, tech interview prep, google interview, gemini ai, blind 75" />
+    <meta name="author" content="PreppBuddy" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://preppbuddy.ai/" />
+    <meta property="og:title" content="PreppBuddy - Master the Technical Interview" />
+    <meta property="og:description" content="Practice Blind 75, System Design, and Mock Interviews with an AI-powered mentor. Instant complexity grading and architectural guidance." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://preppbuddy.ai/" />
+    <meta property="twitter:title" content="PreppBuddy - Master the Technical Interview" />
+    <meta property="twitter:description" content="Practice Blind 75, System Design, and Mock Interviews with an AI-powered mentor. Instant complexity grading and architectural guidance." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            boxShadow: {
+              'retro': '4px 4px 0px 0px rgba(0,0,0,1)',
+              'retro-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
+              'retro-lg': '8px 8px 0px 0px rgba(0,0,0,1)',
+            },
+            colors: {
+              doc: {
+                bg: '#F9FBFD',
+                paper: '#FFFFFF',
+                text: '#1F2937',
+              }
+            },
+            animation: {
+               'scanline': 'scanline 8s linear infinite',
+            },
+            keyframes: {
+               scanline: {
+                  '0%': { transform: 'translateY(0%)' },
+                  '100%': { transform: 'translateY(100%)' },
+               }
+            }
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #f3f4f6;
+        background-image: radial-gradient(#d1d5db 1px, transparent 0);
+        background-size: 20px 20px;
+      }
+      /* Flip Card Utilities */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+      .rotate-y-180 {
+        transform: rotateY(180deg);
+      }
+      /* Editor Overrides */
+      .prism-editor textarea {
+        outline: none !important;
+      }
+      
+      /* Retro Scrollbars */
+      ::-webkit-scrollbar { width: 12px; height: 12px; }
+      ::-webkit-scrollbar-track { background: #ffffff; border-left: 2px solid #000; border-top: 2px solid #000; }
+      ::-webkit-scrollbar-thumb { background: #000; border: 2px solid #fff; }
+      ::-webkit-scrollbar-thumb:hover { background: #333; }
+      ::-webkit-scrollbar-corner { background: #000; }
+      
+      /* CRT Effects */
+      .scanlines {
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0),
+          rgba(255,255,255,0) 50%,
+          rgba(0,0,0,0.05) 50%,
+          rgba(0,0,0,0.05)
+        );
+        background-size: 100% 4px;
+      }
+      .flicker {
+        animation: flicker 0.15s infinite;
+      }
+      @keyframes flicker {
+        0% { opacity: 0.97; }
+        50% { opacity: 1; }
+        100% { opacity: 0.98; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "prismjs": "https://esm.sh/prismjs@1.29.0",
+    "prismjs/": "https://esm.sh/prismjs@1.29.0/",
+    "prism-python": "https://esm.sh/prismjs@1.29.0/components/prism-python",
+    "react-simple-code-editor": "https://esm.sh/react-simple-code-editor@0.13.1",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
